@@ -1,3 +1,5 @@
 Django>=1.9
 markdown
 phonenumbers
+requests
+attrdict

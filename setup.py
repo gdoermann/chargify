@@ -1,14 +1,7 @@
 from setuptools import setup, find_packages
 
-VERSION = (0, 0, 1)
 
-# Dynamically calculate the version based on VERSION tuple
-if len(VERSION) > 2 and VERSION[2] is not None:
-    str_version = "{}.{}.{}".format(*VERSION[:3])
-else:
-    str_version = "{}.{}".format(*VERSION[:2])
-
-version = str_version
+version = open('voicebase/VERSION', 'r').readline().strip()
 
 setup(
     name='chargify',
